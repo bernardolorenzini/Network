@@ -1,0 +1,8 @@
+CC = g++
+CFLAGS = -std=c++11 -Wall -Wextra -pedantic
+
+server: server.cpp
+	$(CC) $(CFLAGS) -o server server.cpp -lpthread
+
+clean:
+	rm -f server
